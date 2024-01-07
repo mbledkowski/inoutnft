@@ -1,0 +1,9 @@
+[
+  {
+    name: "AccountName",
+    pass: "AccountPassword",
+    "revocationCode": "XXXX",
+    "sharedSecret": "XXXX",
+    "identitySecret": "XXXX"
+  }
+]
