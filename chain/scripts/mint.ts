@@ -2,10 +2,10 @@ import { ethers } from "hardhat";
 
 
 async function mintNFT(contractAddress: string, metaDataURL: string) {
-  const ExampleNFT = await ethers.getContractFactory("ExampleNFT")
+  const GamePlatformItemsToNFT = await ethers.getContractFactory("GamePlatformItemsToNFT")
   const [owner] = await ethers.getSigners()
   const arrayMetaDataURL = metaDataURL.split(',')
-  await ExampleNFT.attach(contractAddress).mintNFTs(owner.address, arrayMetaDataURL)
+  await GamePlatformItemsToNFT.attach(contractAddress).mintNFTs(owner.address, arrayMetaDataURL)
   console.log("NFT minted to: ", owner.address)
 }
 
