@@ -13,7 +13,9 @@ const logOnOptions = {
 client.logOn(logOnOptions);
 
 client.on('loggedOn', () => {
-  console.log('Logged into Steam');
+  console.info('Logged into Steam');
   client.setPersona(SteamUser.EPersonaState.Online, credentials[0]?.name);
   client.gamesPlayed(274170);
 });
+
+export default client;
