@@ -8,13 +8,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "ICU",
   "dependencies": {
     "steam-totp": "^2.1.2",
-    "steam-user": "^5.0.4"
+    "steam-tradeoffer-manager": "^2.10.6",
+    "steam-user": "^5.0.4",
+    "steamcommunity": "^3.48.0"
   },
   "devDependencies": {
     "@types/steam-totp": "^2.1.2",
-    "@types/steam-user": "^4.26.8"
+    "@types/steam-tradeoffer-manager": "^2.10.10",
+    "@types/steam-user": "^4.26.8",
+    "@types/steamcommunity": "^3.43.6"
   }
 }
