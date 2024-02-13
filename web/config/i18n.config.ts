@@ -1,11 +1,14 @@
-import en from '../locales/en.toml'
-import pl from '../locales/pl.toml'
-
-export default {
+export default defineI18nConfig(() => ({
   legacy: false,
   locale: 'en',
   messages: {
-    en,
-    pl
+    en: {
+      welcome: 'Welcome',
+      login: 'Connect wallet'
+    },
+    pl: {
+      welcome: 'Witaj',
+      login: 'Połącz portfel'
+    }
   }
-}
+}))
