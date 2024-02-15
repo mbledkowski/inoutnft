@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <NuxtPage />
   </div>
 </template>
@@ -16,3 +16,18 @@ useHead({
   ]
 })
 </script>
+
+<style scoped lang="scss">
+#app {
+  @apply font-body font-medium;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-main font-bold;
+  }
+}
+</style>
