@@ -3,6 +3,15 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
   theme: {
+    fontSize: {
+      'xs': ['0.75rem', { lineHeight: '1rem' }],
+      'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+      'base': ['1rem', { lineHeight: '1.5rem' }],
+      'lg': ['1.5rem', { lineHeight: '2rem' }],
+      'xl': ['2.5rem', { lineHeight: '1' }],
+      '2xl': ['3.5rem', { lineHeight: '1' }],
+      '3xl': ['5rem', { lineHeight: '1' }],
+    },
     extend: {
       colors: {
         'violet': {
@@ -21,8 +30,8 @@ export default <Partial<Config>>{
       },
       fontFamily: {
         main: ["General Sans", "sans-serif"],
-        side: ["Quicksand", "sans-serif"],
-      }
+        body: ["Quicksand", "sans-serif"],
+      },
     }
   }
 }
