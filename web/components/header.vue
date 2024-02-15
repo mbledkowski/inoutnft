@@ -1,41 +1,86 @@
 <template>
   <header>
-    <div class="logo text-violet-300">
-      <picture>
-        <img src="~/assets/img/logo.svg" alt="inoutnft logo" />
-      </picture>
-      <p>inoutnft</p>
+    <div class="header-big">
+      <div class="logo">
+        <picture>
+          <img src="~/assets/img/logo.svg" alt="inoutnft logo" />
+        </picture>
+        <p>inoutnft</p>
+      </div>
+      <div class="login">
+        <UButton class="hidden sm:flex" truncate size="md" :label="$t('login')">
+          <template #leading>
+            <UAvatar size="2xs" icon="i-material-symbols-account-balance-wallet-outline-sharp" alt="Unknown avatar"
+              color="violet" />
+          </template>
+        </UButton>
+        <UAvatar class="sm:hidden flex" size="md" icon="i-material-symbols-account-balance-wallet-outline-sharp"
+          alt="Unknown avatar" color="violet" />
+      </div>
     </div>
-    <div class="nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="login">
-      <UButton :label="$t('login')">
-        <template #leading>
-          <UAvatar size="xs" icon="i-heroicons-photo" alt="Unknown avatar" color="violet" />
-        </template>
-      </UButton>
+    <div class="header-smol">
+      <div class="logo">
+        <picture>
+          <img src="~/assets/img/logo.svg" alt="inoutnft logo" />
+        </picture>
+        <p>inoutnft</p>
+      </div>
+      <div class="login">
+        <UButton class="hidden sm:flex" truncate size="sm" :label="$t('login')">
+          <template #leading>
+            <UAvatar size="3xs" icon="i-material-symbols-account-balance-wallet-outline-sharp" alt="Unknown avatar"
+              color="violet" />
+          </template>
+        </UButton>
+        <UAvatar class="sm:hidden flex" size="sm" icon="i-material-symbols-account-balance-wallet-outline-sharp"
+          alt="Unknown avatar" color="violet" />
+      </div>
     </div>
   </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &>.logo {
+  &>div {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 
-    &>picture {
-      width: 50px;
-      height: 50px;
+    &>div:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &>.logo {
+      display: flex;
+      align-items: center;
+
+      &>picture {
+        width: 40px;
+        height: 40px;
+        @apply dark:invert;
+      }
+
+      &>p {
+        @apply text-lg font-semibold font-main;
+      }
+    }
+
+    &>.login {
+      display: flex;
+    }
+  }
+
+  &>.header-smol {
+    &>.logo {
+      &>picture {
+        width: 32px;
+        height: 32px;
+      }
+
+      &>p {
+        @apply text-base font-semibold font-main;
+      }
     }
   }
 }
