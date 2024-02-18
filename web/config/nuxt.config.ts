@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     [
+      "@nuxt/image",
+      {}
+    ],
+    [
       "@nuxtjs/i18n",
       {
         vueI18n: "~/config/i18n.config.ts",
