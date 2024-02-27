@@ -1,0 +1,7 @@
+/* Source: https://github.com/excalidraw/virgil */
+
+@font-face {
+  font-family: "Virgil";
+  src: url("../fonts/Virgil.woff2") format('woff2');
+  font-display: swap;
+}
