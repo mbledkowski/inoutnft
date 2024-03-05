@@ -19,6 +19,9 @@
         </section>
       </div>
       <div class="image">
+        <video autoplay loop muted>
+          <source src="~/assets/vid/hero.webm" type="video/webm" />
+        </video>
       </div>
     </article>
     <article id="howto">
@@ -32,9 +35,13 @@
   @apply w-svw bg-gray-50 dark:bg-gray-950;
 
   &>#hero {
-    @apply p-8 h-svh;
-    @apply flex items-center;
+    background-position: center;
+    background-size: cover;
+    background-image: v-bind(bgLight);
+    @apply text-white;
 
+    @apply px-8 py-16 min-h-svh sm:px-16 sm:py-32 md:px-32;
+    @apply flex items-center justify-between flex-col lg:flex-row;
     &>.content {
       @apply max-w-sm md:max-w-lg;
 
@@ -52,6 +59,10 @@
         }
       }
     }
+    &>.image {
+      @apply max-h-max max-w-3xl;
+    }
+  }
   }
 }
 </style>
