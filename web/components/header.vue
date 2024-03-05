@@ -44,13 +44,13 @@
   position: absolute;
   width: 100%;
 
-  height: 4.5rem;
+  height: 4rem;
 
   &>header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    @apply p-3;
 
     @apply bg-gray-50 dark:bg-gray-950;
     @apply sticky top-0 left-0 right-0 z-20;
@@ -81,8 +81,9 @@
 
   &>.header-smol {
     background: rgba(255, 255, 255, .2);
-    padding: .5rem;
-    margin: .5rem;
+
+    @apply p-2 m-2;
+
     @apply bg-gray-50/75 dark:bg-gray-950/75;
     @apply rounded-full backdrop-blur;
     @apply fixed top-0 left-0 right-0 z-10;

@@ -30,7 +30,7 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  @apply h-fit;
+  @apply pb-8 h-fit;
   @apply bg-gray-50 dark:bg-gray-950;
 
   &>.divider picture {
