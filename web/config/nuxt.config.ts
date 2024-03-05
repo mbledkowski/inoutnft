@@ -4,7 +4,9 @@ export default defineNuxtConfig({
   modules: [
     [
       "@nuxt/image",
-      {}
+      {
+        dir: 'assets/img'
+      }
     ],
     [
       "@nuxtjs/i18n",
