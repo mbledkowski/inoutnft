@@ -14,7 +14,8 @@ useHead({
   // ],
   link: [
     { rel: 'stylesheet', type: 'text/css', href: '/css/general-sans.css' },
-    { rel: 'stylesheet', type: 'text/css', href: '/css/quicksand.css' }
+    { rel: 'stylesheet', type: 'text/css', href: '/css/quicksand.css' },
+    { rel: 'stylesheet', type: 'text/css', href: '/css/virgil.css' }
   ]
 })
 </script>
@@ -22,6 +23,11 @@ useHead({
 <style lang="scss">
 #app {
   @apply font-body font-medium;
+  @apply w-svw bg-gray-50 dark:bg-gray-950;
+
+  div {
+    @apply border-gray-300 dark:border-gray-700;
+  }
 
   h1,
   h2,
@@ -34,14 +40,17 @@ useHead({
 
   h1 {
     @apply md:text-3xl text-2xl;
+    @apply mt-8;
   }
 
   h2 {
     @apply md:text-2xl text-xl;
+    @apply mt-4;
   }
 
   h3 {
     @apply md:text-xl text-lg;
+    @apply mt-4;
   }
 
   h4 {
