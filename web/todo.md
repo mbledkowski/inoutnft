@@ -1,2 +1,4 @@
  - [ ] Fix i18n, so that the correct language gets loaded
  - [ ] Optimalize the size of the website
+ - [ ] Fix styling on Chrome
+ - [ ] Fix styling in Safari
