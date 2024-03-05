@@ -1,0 +1,2 @@
+ - [ ] Fix i18n, so that the correct language gets loaded
+ - [ ] Optimalize the size of the website
