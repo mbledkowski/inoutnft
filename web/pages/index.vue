@@ -165,7 +165,7 @@
 
     &>#underhood {
       .image {
-        @apply my-8;
+        @apply my-8 rounded-xl shadow-md;
       }
     }
   }

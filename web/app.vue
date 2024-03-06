@@ -40,17 +40,16 @@ useHead({
 
   h1 {
     @apply md:text-3xl text-2xl;
-    @apply mt-8;
+    @apply my-8;
   }
 
   h2 {
     @apply md:text-2xl text-xl;
-    @apply mt-4;
+    @apply my-4;
   }
 
   h3 {
     @apply md:text-xl text-lg;
-    @apply mt-4;
   }
 
   h4 {
