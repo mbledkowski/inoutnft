@@ -12,7 +12,7 @@ export default defineI18nConfig(() => ({
       start: "Start now",
       source: "Source code",
       createdby: "Created by",
-      createdbyname: "Maciej Błe˛dkowski",
+      createdbyname: "Maciej Błędkowski",
       legalMumboJumbo: "This service is not affiliated in any way with Valve Corp. and its affiliates (collectively the “Valve”). We do not claim any rights to the virtual items, which remain the intellectual property of Valve Corp.",
       howto: {
         title: "How to...",
@@ -59,7 +59,7 @@ export default defineI18nConfig(() => ({
       start: "Zaczynamy",
       source: "Kod źródłowy",
       createdby: "Stworzone przez",
-      createdbyname: "Macieja Błe˛dkowskiego",
+      createdbyname: "Macieja Błędkowskiego",
       legalMumboJumbo: "Ta usługa nie jest w żaden sposób powiązana z Valve Corp. i powiązanymi podmiotami (kolektywnie „Valve”). Nie rościmy sobie jakiechkolwiek praw do wirtualnych przedmiotów, które pozostają własnością intelektualną Valve Corp.",
       howto: {
         title: "Jak...",
@@ -90,7 +90,10 @@ export default defineI18nConfig(() => ({
         first: "<{lessThan} przedmiotów",
         second: ">={moreThan} i <{lessThan} przedmiotów",
         third: ">={moreThan} przedmiotów",
-        legalMumboJumbo: "Opłaty serwisowe mogą ulec zmianie. Opłaty te pokrywają koszty naszej infrastruktury. Wszelkie zmiany w opłatach serwisowych zostaną ogłoszone 30 dni przed ich wprowadzeniem. Ogłoszenie zostanie dokonane za pośrednictwem naszego oficjalnego konta Mastodon, {masnodon}.\nOdpowiedzialność za pozostanie na bieżąco z naszymi postami na Mastodonie spoczywa na użytkowniku. Zmiany będą dotyczyć wszystkich użytkowników posiadających NFT-y {name}. W przypadku, gdy użytkownik nie zgadza się z nową strukturą opłat, ma on prawo sprzedać lub wymienić swoje NFT-y przed wprowadzeniem zmian."
+        legalMumboJumbo: {
+          firstPart: "Opłaty serwisowe mogą ulec zmianie. Opłaty te pokrywają koszty naszej infrastruktury. Wszelkie zmiany w opłatach serwisowych zostaną ogłoszone 30 dni przed ich wprowadzeniem. Ogłoszenie zostanie dokonane za pośrednictwem naszego oficjalnego konta Mastodon, {masnodon}.",
+          secondPart: "Odpowiedzialność za pozostanie na bieżąco z naszymi postami na Mastodonie spoczywa na użytkowniku. Zmiany będą dotyczyć wszystkich użytkowników posiadających NFT-y {name}. W przypadku, gdy użytkownik nie zgadza się z nową strukturą opłat, ma on prawo sprzedać lub wymienić swoje NFT-y przed wprowadzeniem zmian."
+        }
       }
     }
   }
