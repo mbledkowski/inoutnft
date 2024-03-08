@@ -115,7 +115,9 @@
         </div>
       </section>
       <section class="legal">
-        <p>{{ $t('pricing.legalMumboJumbo.firstPart', { masnodon: "@inout@toot.io" }) }}</p>
+        <p
+          v-html="$t('pricing.legalMumboJumbo.firstPart', { masnodon: '<a href=https://toot.io/@inout><b>@inout@toot.io</b></a>' })">
+        </p>
         <p>{{ $t('pricing.legalMumboJumbo.secondPart', { name: "inoutnft" }) }}</p>
       </section>
     </article>
