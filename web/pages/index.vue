@@ -19,8 +19,11 @@
         </section>
       </div>
       <div class="image">
-        <video autoplay loop muted>
-          <source src="~/assets/vid/hero.webm" type="video/webm" />
+        <video class="block dark:hidden" autoplay loop muted>
+          <source src="~/assets/vid/hero_yagami.webm" type="video/webm" />
+        </video>
+        <video class="hidden dark:block" autoplay loop muted>
+          <source src="~/assets/vid/hero_dark.webm" type="video/webm" />
         </video>
       </div>
     </article>
